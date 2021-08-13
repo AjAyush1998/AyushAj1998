@@ -1,0 +1,60 @@
+import java.util.Scanner;
+interface RegularPolygon
+{
+	abstract int getNumSides();
+	abstract double getSideLength();
+}
+
+class EquilateralTriangle implements RegularPolygon
+{
+	public double side;
+	public int getNumSide()
+	{
+		return 3;
+	}
+	public double getSideLength()
+	{
+		EquilateralTriangle();
+		return side;
+	}
+	double EquilateralTriangle()
+	{
+		side=3.66;
+		return side;
+	}
+}
+class Square implements RegularPolygon
+{
+	public double sqsi;
+	public int getNumSide()
+	{
+		return 4;
+	}
+	public double getSideLength()
+	{
+		Square();
+	}
+	double Square()
+	{
+		sqsi=6.54;
+		return sqsi;
+	}
+}
+class InterMain
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		EquilateralTriangle eq= new EquilateralTriangle();
+		Square sq=new Square();
+		RegularPolygon re;
+		re =eq;
+		System.out.println("EQ");
+		System.out.println("Side: "+re.getNumSide);
+		System.out.println("Side Length: "+re.getSideLength);
+		re=sq;
+		System.out.println("SQ");
+		System.out.println("Side: "+re.getNumSide);
+		System.out.println("Side Length: "+re.getSideLength);
+	}
+}
